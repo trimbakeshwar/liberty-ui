@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import Headers from "../component/headers" 
 import "../styles/dashbordstyle.scss"
 class Dashbord extends Component{
     render(){
         return(
             <div className="dashbord">
-                <h1>hello</h1>
+               <div>
+                  <Headers />
+               </div>
                
             </div>
         );
