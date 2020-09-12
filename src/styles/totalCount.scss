@@ -1,0 +1,50 @@
+$fontColor:rgb(31, 31, 158);
+.container{
+    background-color: white;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 30px;
+
+}
+@mixin boxStyle() {
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: $fontColor;
+    font-size: larger;
+}
+.userscount{
+    @include boxStyle();
+    border-right: groove;
+    border-width: thin;
+    border-color:rgb(238, 237, 237); ;
+    
+}
+.userscount1{
+    @include boxStyle();
+}
+.positionsetting{
+    @include boxStyle();
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.iconPosition{
+    padding-right: 15px;
+}
+.countss{
+font-size: x-large;
+font-weight: bold;
+}  
+.countsofuser{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}

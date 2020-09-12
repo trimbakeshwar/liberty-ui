@@ -1,16 +1,39 @@
+$fontColor:rgb(31, 31, 158);
 .upperbar{
     background-color: white;
     height: 8em;
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
     padding-top: 5px;
+    margin-bottom: 30px;
 
+}
+.searchbox{
+    background-color: rgb(247, 247, 247);;
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-right: 10px;
+
+}
+.search{
+    background-color: rgb(247, 247, 247);;
+    display: flex;
+    flex-direction: row;
+  
+    border-radius: 25px;
+}
+.textfields{
+    background-color: rgb(247, 247, 247);;
+    border-radius: 25px;
 }
 .nameOfUi{
     font-weight: 600;
     font-size: 28px;
+}
+.notification{
+padding-right: 10px;
 }
 .nameContainer{
     display: flex;
@@ -18,10 +41,12 @@
     font-weight: 600;;
     font-size: 28px;
     padding-bottom: 20px;
-
+    justify-content: space-between;
 }
 .dashbordSection{
+    color:$fontColor;
     font-size: 15px;
+   
     padding-top: 15px;
     padding-bottom: 15px;
  width: 17%;
@@ -41,4 +66,13 @@
 .icons{
     display: flex;
     flex-direction: row;
+    margin-top: 5px;
+    width: 7%;
+    justify-content: flex-end;
+}
+.iconsstyle{
+    padding-right: 5px;
+    padding-top: 4px;
+ color: blue;
+ font-weight: bold;
 }
