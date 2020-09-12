@@ -6,6 +6,7 @@ import "../styles/totalCount.scss"
 import ProfileRow from "../component/profilerow"
 import TableRow from "../component/tablerow"
 import ChartRow from "../component/chartrow"
+import ManageTicket from "../component/manageticketRow"
 class Dashbord extends Component{
     render(){
         return(
@@ -24,6 +25,9 @@ class Dashbord extends Component{
                </div>
                <div>
                   <ChartRow />
+               </div>
+               <div>
+                   <ManageTicket />
                </div>
             </div>
         );
