@@ -5,6 +5,7 @@ import TotalCount from "../component/totalCounts"
 import "../styles/totalCount.scss"
 import ProfileRow from "../component/profilerow"
 import TableRow from "../component/tablerow"
+import ChartRow from "../component/chartrow"
 class Dashbord extends Component{
     render(){
         return(
@@ -20,6 +21,9 @@ class Dashbord extends Component{
                </div>
                <div>
                   <TableRow />
+               </div>
+               <div>
+                  <ChartRow />
                </div>
             </div>
         );
