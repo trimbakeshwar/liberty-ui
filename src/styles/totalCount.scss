@@ -1,4 +1,4 @@
-$fontColor:rgb(31, 31, 158);
+$fontColor: rgb(39, 27, 105);;
 .container{
     background-color: white;
     height: 8em;
@@ -7,14 +7,14 @@ $fontColor:rgb(31, 31, 158);
     margin-left: 120px;
     margin-right: 120px;
     margin-bottom: 30px;
-
+color: $fontColor;
 }
 @mixin boxStyle() {
     width: 25%;
     justify-content: center;
     align-items: center;
     display: flex;
-    color: $fontColor;
+    
     font-size: larger;
 }
 .userscount{
@@ -36,6 +36,7 @@ $fontColor:rgb(31, 31, 158);
 }
 .iconPosition{
     padding-right: 15px;
+    color: blueviolet;
 }
 .countss{
 font-size: x-large;

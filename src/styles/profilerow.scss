@@ -1,3 +1,4 @@
+$fontColor: rgb(39, 27, 105);;
 .profilecard{
     background-color: white;
     width: 40%;
@@ -19,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color:$fontColor
 }
 .profilelikes{
     display: flex;
@@ -26,8 +28,10 @@
     justify-content: space-between;;
     align-items: center;
     border-top: groove;
+    border-width: thin;
     border-color:rgb(238, 237, 237); 
-    color:rgb(54, 43, 116);
+    color:$fontColor;
+    
 }
 .digit{
     margin-top: 30px;
@@ -36,7 +40,7 @@
     font-weight: bold;
 } 
 .post{
-
+  
 } 
 .buttonclass
 {
@@ -49,7 +53,7 @@ margin-top: 30px;
     display: flex;
     font-size: 16px;
     text-align: center;
-    color:rgb(54, 43, 116);
+    color:$fontColor;
 } 
 .proffesion{
 font-size: 18px;
@@ -59,7 +63,29 @@ padding-top: 5px;
 } 
 .Name{
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 600;
     padding-top: 5px;
-    color:rgb(54, 43, 116);
+    color:rgb(39, 27, 105);
+}
+.lines{
+    border-top: groove;
+    border-width: thin;
+    border-color:rgb(238, 237, 237);
+}
+.details{
+    padding-top: 20px;
+    padding-bottom: 3px;
+font-size: 18px;
+font-weight: 600;
+color:$fontColor;
+}
+.quantity{
+    font-size: 30px;
+    padding-bottom: 3px;
+    font-weight: 700;
+    color:$fontColor;
+}
+.changeInPercent{
+   padding-bottom: 20px;
+   color:$fontColor;
 }

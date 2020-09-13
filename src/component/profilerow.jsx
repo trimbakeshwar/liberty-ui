@@ -45,6 +45,13 @@ class ProfileRow extends Component {
                 </div>
                 <div className="profilecard">
 
+                <div className="details">Top Product</div>
+                <div className="quantity">598,486</div>
+                <div className="changeInPercent">6.5% change from today</div>
+                <div className="lines"></div>
+                <div className="details">Support Case</div>
+                <div className="quantity">323,360</div>
+                <div className="changeInPercent">2.5% change from yesterday</div>
                 </div>
                 <div className="profilecard">
 

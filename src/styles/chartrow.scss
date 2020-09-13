@@ -1,16 +1,58 @@
+$fontColor: rgb(39, 27, 105);;
 .chartcard{
     background-color: white;
     width: 51%;
-    height: 30em;
+    height: 25em;
     display: flex;
     flex-direction: row;
-   
+   padding: 50px;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+.containerss{
+    display: flex;
+    flex-direction: row;
 }
  .chartContainer {
     display: flex;
     flex-direction: row;
     margin-left: 120px;
     margin-right: 90px;
+ }
+ .dotstyle{
+     font-size:35px;
+     font-weight: bolder;
+     color: blue;
+     position: relative;
+     top: 1em;
+     padding-right: 30px;
+ }
+ .linesss{
+    border-left: 2px solid blue;
+    border-width: thin;
+    position: relative;
+    height: 53px;
+    top: 2.5em;
+    left: 10px;
+   
+    
+ }
+ .heding{
+
+font-size: 18px;
+font-weight:600 ;
+color:$fontColor;
+padding-bottom: 10px;
+ } 
+ .discript{
+    color:$fontColor;
+    padding-bottom: 5px;
+ } 
+ .timing{
+    color: rgb(163, 159, 159);
+    padding-bottom: 20px;
+ }
+ .updateContainer{
+     display: flex;
+     flex-direction: column;
  }
