@@ -2,10 +2,19 @@ import React, { Component } from 'react';
 import "../styles/chartrow.scss"
 class ChartRow extends Component {
     render() {
+        
         return (
 <div className="chartContainer">
-    <div className="chartcard">
+    <div className="chartcardTwo">
+        
+            <div className="heding">The Current Chart</div>
 
+            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+            <div className="profilelikes"></div>
+            
+            <div className="statuss">Projects Status</div>
+           
+            <div className="pcsStatus">76,533</div>
     </div>
     <div className="chartcard">
         <div>

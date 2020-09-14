@@ -1,8 +1,85 @@
-.tablecontainer{
-
-height:30em;
+@mixin containersss {
+   
+min-height:21em;
 margin-left: 120px;
 margin-right: 120px;
 margin-bottom: 30px;
-background-color: white;
+background-color: white; 
+}
+.tablecontainer{
+@include containersss
+
+}
+.manageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-style: groove;
+    border-width: thin;
+    border-top:rgb(238, 237, 237);
+    border-right:rgb(238, 237, 237);
+    border-left:rgb(238, 237, 237);
+   
+    padding:20px
+}
+.ticketcontainer{
+    @include containersss ;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.ticketDetail{
+color: #7C637C;
+padding-bottom: 10px;
+} 
+.ticketName{
+color:#5C5C76;
+font-weight: 600;
+}
+.timingsss{
+    display: flex;
+    flex-direction: row;
+    color: #A8ABB0;
+    
+}
+
+.ManageButton{
+
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+td, th {
+  border: 1px  solid #dddddd;
+  text-align: left;
+  padding-top: 20px;
+  padding: 20px;
+  color: #354168;
+  font-size: 15px;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+.paymentApproved{
+   background-color: #4CCEAC;
+   border-radius: 5px;
+   color: white;
+    padding: 5px;
+    width:70px
+}
+.paymentReject{
+    background-color: #DB504A;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    width:40px
 }
