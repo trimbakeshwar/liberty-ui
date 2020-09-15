@@ -1,15 +1,83 @@
 import React, { Component } from 'react';
 import "../styles/chartrow.scss"
+import {Bar} from 'react-chartjs-2'
+
 class ChartRow extends Component {
     render() {
-        
+        const arbitraryStackKey = "stack1"
+        const data = {
+            labels:['mon','tue','wed','thu','fri','sat','sun'],
+            datasets:[
+                {
+                    stack: arbitraryStackKey,
+                    label: 'data1',
+
+                data: [3.5, 4, 1, 5, 3,7,3.5],
+                borderColor:['#6970EA'],
+                borderWidth:['thin'],
+        backgroundColor:['#0A16FF','#0A16FF','#0A16FF','#0A16FF','#0A16FF','#0A16FF','#0A16FF'],
+        pointBackgroundColor:['#D9E1FD'],
+        pointBorderColor:['white']
+
+              
+            },
+                {
+                    stack: arbitraryStackKey,
+      label: 'data1',
+                    data: [4.5,4,7,3,5,1,4.5],
+                    borderColor:['black'],
+                    borderWidth:['thin'],
+               
+                pointBackgroundColor:['#D9E1FD'],
+                pointBorderColor:['white']
+                   }
+            ]
+        }
+const option={
+    
+    legend: {
+        display: false
+      },
+        scales:{
+            xAxes:[{
+                stacked: true,
+                barPercentage: 0.4,
+                gridLines: {
+                    display: false,
+                    drawBorder: false,
+                  },
+            }],
+           yAxes:[{
+            stacked: true,
+            ticks: {
+                backdropColor : "rgba(255,255,255,0)",
+                max: 10,
+            min: 0,
+                stepSize: 0.5,
+                display: false //this will remove only the label
+            },
+               
+                gridLines: {
+                    display: false,
+                    drawBorder: false,
+                  },
+                
+            
+               
+           }]
+        }
+
+}
         return (
 <div className="chartContainer">
     <div className="chartcardTwo">
         
             <div className="heding">The Current Chart</div>
 
-            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+            <div >
+                <Bar data={data} options={option}  height="100px" style={{width:'100%'}}/>
+  
+                    </div>
             <div className="profilelikes"></div>
             
             <div className="statuss">Projects Status</div>

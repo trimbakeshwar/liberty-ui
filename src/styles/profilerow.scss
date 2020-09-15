@@ -9,12 +9,14 @@ $fontColor: #354168;
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
 .profilecontainer{
     display: flex;
     flex-direction: row;
     margin-left: 120px;
     margin-right: 90px;
 }
+
 .infoContainer{
     display: flex;
     flex-direction: column;
@@ -35,7 +37,9 @@ $fontColor: #354168;
     color:$fontColor;
     
 }
+
 .digit{
+  
     margin-top: 30px;
     padding-bottom: 5px;
     font-size: 20px;
@@ -46,6 +50,10 @@ $fontColor: #354168;
     color:  #A8ABB0;
    
 } 
+.settinggraphs{
+    display: flex;
+    flex-direction: column;
+}
 .buttonclass
 {
 background-color: blue ;
@@ -84,11 +92,16 @@ padding-top: 5px;
     align-items: center;
 }
 .lines{
+   
     border-top: groove;
     border-width: thin;
+    width:100%;
+    display: flex;
+    
     border-color:rgb(238, 237, 237);
 }
 .details{
+  
     padding-top: 20px;
     padding-bottom: 3px;
 font-size: 18px;
@@ -96,12 +109,14 @@ font-weight: 600;
 color:#636363;
 }
 .quantity{
+  
     font-size: 30px;
     padding-bottom: 3px;
     font-weight: 700;
     color:$fontColor;
 }
 .changeInPercent{
+   
    padding-bottom: 20px;
    color:#704180;
 }

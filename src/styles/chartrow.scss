@@ -2,7 +2,7 @@ $fontColor: #354168;
 @mixin chartStyle($para){
     background-color: white;
     width: 51%;
-    height: 25em;
+    height: 21em;
     display: flex;
     flex-direction: $para;
    padding: 50px;

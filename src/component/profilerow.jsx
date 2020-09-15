@@ -1,42 +1,128 @@
 import React, { Component } from 'react';
 import "../styles/profilerow.scss"
 import Button from 'react-bootstrap/Button'
+import ReactDOM from 'react-dom'
+import {Line} from 'react-chartjs-2'
 class ProfileRow extends Component {
 
 
     render() {
-        const options = {
-            animationEnabled: true,
-            title: {
-                text: "Monthly Sales - 2017"
+        const data = {
+            labels:['jan','feb','mar','april','may','jun','jul'],
+            datasets:[
+                {
+                label:'month',
+
+                data: [1,2,1,2.5,3.5,3,4],
+                borderColor:['#6970EA'],
+                borderWidth:['thin'],
+        backgroundColor:['#ADB4F5'],
+        pointBackgroundColor:['#D9E1FD'],
+        pointBorderColor:['white']
+
+              
             },
-            axisX: {
-                valueFormatString: "MMM"
-            },
-            axisY: {
-                title: "Sales (in USD)",
-                prefix: "$"
-            },
-            data: [{
-                yValueFormatString: "$#,###",
-                xValueFormatString: "MMMM",
-                type: "spline",
-                dataPoints: [
-                    { x: new Date(2017, 0), y: 25060 },
-                    { x: new Date(2017, 1), y: 27980 },
-                    { x: new Date(2017, 2), y: 42800 },
-                    { x: new Date(2017, 3), y: 32400 },
-                    { x: new Date(2017, 4), y: 35260 },
-                    { x: new Date(2017, 5), y: 33900 },
-                    { x: new Date(2017, 6), y: 40000 },
-                    { x: new Date(2017, 7), y: 52500 },
-                    { x: new Date(2017, 8), y: 32300 },
-                    { x: new Date(2017, 9), y: 42000 },
-                    { x: new Date(2017, 10), y: 37160 },
-                    { x: new Date(2017, 11), y: 38400 }
-                ]
-            }]
+                {data: [3,5,4,6,8,7,8.5],
+                    borderColor:['#6970EA'],
+                    borderWidth:['thin'],
+                backgroundColor:['#D9E1FD'],
+                pointBackgroundColor:['#D9E1FD'],
+                pointBorderColor:['white']
+                   }
+            ]
         }
+const option={
+    
+    legend: {
+        display: false
+      },
+        scales:{
+            xAxes:[{
+                ticks: {
+                    backdropColor : "rgba(255,255,255,0)",
+                   
+                    display: false //this will remove only the label
+                },
+                gridLines: {
+                    display: false,
+                    drawBorder: false,
+                  },
+            }],
+           yAxes:[{
+            ticks: {
+                backdropColor : "rgba(255,255,255,0)",
+                max: 10,
+            min: 0,
+                stepSize: 1,
+                display: false //this will remove only the label
+            },
+               
+                gridLines: {
+                    display: false,
+                    drawBorder: false,
+                  },
+                
+            
+               
+           }]
+        }
+
+    
+    
+}
+const data1 = {
+    labels:['2006','2007','2008','2009','2010','2011'],
+    datasets:[
+        {data: [50,75,27,30,63,76],
+        borderColor:['#6970EA'],
+        backgroundColor:['white'],
+   
+    pointBackgroundColor:['#A8BBFF'],
+    pointBorderColor:['white']
+    },
+        {data: [0,78,10,50,100,62],
+            borderColor:['#D9E1FD'],
+            
+    backgroundColor:['white'],
+    pointBackgroundColor:['#30335C'],
+    pointBorderColor:['white']
+           }
+    ]
+}
+const options={
+
+    legend: {
+        display: false
+      },
+scales:{
+    xAxes:[{
+        
+        gridLines: {
+            display: false,
+            drawBorder: false,
+          },
+    }],
+   yAxes:[{
+    ticks: {
+        max: 100,
+    min: 0,
+        stepSize: 25,
+        Display: false //this will remove only the label
+    },
+       
+        gridLines: {
+            display: false,
+            drawBorder: false,
+          },
+        
+    
+       
+   }]
+}
+
+
+}
+          
         return (
             <div className="profilecontainer">
                 <div className="profilecard">
@@ -86,8 +172,9 @@ class ProfileRow extends Component {
                     <div className="details">Support Case</div>
                     <div className="quantity">323,360</div>
                     <div className="changeInPercent">2.5% change from yesterday</div>
-                    <div>
-
+                    <div >
+                <Line data={data} options={option}  height="190px" style={{width:'100%'}}/>
+  
                     </div>
                 </div>
                 <div className="profilecard">
@@ -96,14 +183,14 @@ class ProfileRow extends Component {
                             <div className="digit">6,256</div>
                             <div className="post" >Total sales</div>
                         </div>
-                   
                     <div className="graphsetting">
                         <div  className="digit">8569</div>
                         <div className="post">Open Campaign</div>
                     </div>
-                       
                 </div>
-                <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+                <div style={{paddingTop:'20px',height:'500px' ,width:'100%'}}>
+                <Line data={data1} options={options} height='250px' style={{ width:'100%'}} />
+                    </div>
                 <div className="dataSetting">
                     <div className="graphsetting">
                         <div className="digit">5136</div>
