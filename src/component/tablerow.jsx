@@ -43,7 +43,7 @@ class TableRow extends Component {
 
     render() {
         return (
-            <div className="tablecontainer">
+            <div style={{overflow:"auto"}} className="tablecontainer">
 
                 <table>
                     <tr>

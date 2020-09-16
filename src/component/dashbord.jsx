@@ -14,13 +14,13 @@ class Dashbord extends Component{
                <div>
                   <Headers />
                </div>
-               <div>
+                <div>
                   <TotalCount />
                </div>
-               <div>
+              <div>
                   <ProfileRow />
                </div>
-               <div>
+                <div>
                   <TableRow />
                </div>
                <div>

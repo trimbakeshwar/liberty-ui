@@ -107,7 +107,7 @@ scales:{
         max: 100,
     min: 0,
         stepSize: 25,
-        Display: false //this will remove only the label
+        Display: true //this will remove only the label
     },
        
         gridLines: {
@@ -188,7 +188,7 @@ scales:{
                         <div className="post">Open Campaign</div>
                     </div>
                 </div>
-                <div style={{paddingTop:'20px',height:'500px' ,width:'100%'}}>
+                <div style={{paddingTop:'20px' ,width:'100%'}}>
                 <Line data={data1} options={options} height='250px' style={{ width:'100%'}} />
                     </div>
                 <div className="dataSetting">

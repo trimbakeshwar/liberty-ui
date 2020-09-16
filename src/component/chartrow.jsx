@@ -75,7 +75,7 @@ const option={
             <div className="heding">The Current Chart</div>
 
             <div >
-                <Bar data={data} options={option}  height="100px" style={{width:'100%'}}/>
+                <Bar className="barContainer" data={data} options={option}  style={{width:'100%'}}/>
   
                     </div>
             <div className="profilelikes"></div>

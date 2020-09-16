@@ -120,3 +120,38 @@ color:#636363;
    padding-bottom: 20px;
    color:#704180;
 }
+@media only screen and (max-width: 418px) {
+    .profilecontainer {
+      
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }   
+    .profilecard {
+        width: 81%;
+        
+    }
+    .profilelikes {
+        margin-top: -11px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .profilecontainer {
+       
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .profilecard {
+        width: 82%;
+       height: 28em;
+    }
+}
+@media only screen and (max-width: 320px) {
+  
+    .profilecard {
+        width: 79%;
+       
+    }
+}

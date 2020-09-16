@@ -2,7 +2,7 @@ $fontColor: #354168;
 @mixin chartStyle($para){
     background-color: white;
     width: 51%;
-    height: 21em;
+    min-height: 21em;
     display: flex;
     flex-direction: $para;
    padding: 50px;
@@ -54,6 +54,7 @@ $fontColor: #354168;
    
     
  }
+
  .heding{
 
 font-size: 18px;
@@ -73,3 +74,80 @@ padding-bottom: 10px;
      display: flex;
      flex-direction: column;
  }
+ @media only screen and (max-width: 418px) {
+    .chartContainer {
+       flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }   
+    .chartcardTwo {
+       
+        width: 71%;
+    }
+    .chartcard{
+        width: 71%;
+       
+    }
+    .linesss{
+        height: 73px;
+    }
+    .profilelikes {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .chartContainer {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .chartcardTwo {
+       
+        width: 71%;
+    }
+    .chartcard{
+        width: 71%;
+        
+    }
+    .linesss{
+        height: 73px;
+    }
+
+}
+@media only screen and (max-width: 360px) {
+    .chartContainer {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .chartcardTwo {
+       
+        width: 70%;
+    }
+    .chartcard{
+        width: 70%;
+        
+    }
+    .linesss{
+        height: 85px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .chartContainer {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .chartcardTwo {
+       
+        width: 65%;
+    }
+    .chartcard{
+        width: 65%;
+        
+    }
+    .linesss{
+        height: 120px;
+    }
+}

@@ -11,7 +11,7 @@ class Headers extends Component {
                         <div className="nameOfUi">
                             Liberty
                         </div>
-                        <div style={{ color: "Blue" }}>UI</div>
+                        <div style={{ paddingTop:"1px", color: "Blue" }}>UI</div>
                     </div>
                     <div className="icons">
                         <div className="searchbox">

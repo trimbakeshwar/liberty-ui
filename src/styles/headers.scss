@@ -1,7 +1,7 @@
 $fontColor:#354168;
 .upperbar{
     background-color: white;
-    height: 8em;
+   min-height: 8em;
     display: flex;
     flex-direction: column;
     padding-left: 120px;
@@ -27,6 +27,7 @@ $fontColor:#354168;
 .textfields{
     background-color: rgb(247, 247, 247);;
     border-radius: 25px;
+   
 }
 .nameOfUi{
     font-weight: 600;
@@ -76,3 +77,75 @@ padding-right: 10px;
     color: blueviolet;
  font-weight: bold;
 }
+@media only screen and (max-width: 418px) {
+    .upperbar{
+        padding-left: 10px;
+    padding-right: 10px;
+    }
+    .dashbordSection{
+        font-size: 10px;
+        width: 33%; 
+       margin-bottom: 10px;
+    }
+   
+    .sections{
+
+       flex-wrap: wrap;
+    }
+  }
+
+@media only screen and (max-width: 414px) {
+    .upperbar{
+        padding-left: 10px;
+    padding-right: 10px;
+    }
+    .dashbordSection{
+        font-size: 10px;
+        width: 33%; 
+       margin-bottom: 10px;
+    }
+   
+    .sections{
+      
+       flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (max-width: 411px) {
+    .upperbar{
+        padding-left: 10px;
+    padding-right: 10px;
+    }
+    .textfields{
+        width: 100px;
+       }
+   
+  }
+
+  @media only screen and (max-width: 360px) {
+    .upperbar{
+        padding-left: 10px;
+    padding-right: 10px;
+    }
+   
+    .nameOfUi{
+        padding-top: 1px;
+    }
+   .textfields{
+    width: 100px;
+   }
+   
+  }
+  
+  @media only screen and (max-width: 320px) {
+   
+    .dashbordSection{
+        font-size: 10px;
+        width: 33%; 
+       margin-bottom: 10px;
+    }
+   .textfields{
+    width: 60px;
+   }
+  
+  }

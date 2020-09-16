@@ -1,7 +1,7 @@
 $fontColor: #354168;
 .container{
-    background-color: white;
-    height: 8em;
+   
+    min-height: 8em;
     display: flex;
     flex-direction: row;
     margin-left: 120px;
@@ -14,7 +14,7 @@ color: $fontColor;
     justify-content: center;
     align-items: center;
     display: flex;
-    
+    background-color: white;
     font-size: larger;
 }
 .userscount{
@@ -49,3 +49,64 @@ justify-content: center;
 align-items: center;
 
 }
+@media only screen and (max-width: 418px) {
+    .container {
+       
+        margin-left: 10px;
+        margin-right: 21px;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+
+    }
+    @mixin boxStyle() {
+        width: 49.5%;
+        flex-direction: column;
+        height: 8em;
+        border-bottom: groove;
+        border-width: thin;
+    }
+    .userscount{
+        @include boxStyle();
+    
+        
+    }
+    .userscount1{
+        @include boxStyle();
+    }
+  }
+
+@media only screen and (max-width: 414px) {
+    .container {
+       
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+
+    }
+    @mixin boxStyle() {
+        width: 49.5%;
+        flex-direction: column;
+        height: 8em;
+        border-bottom: groove;
+        border-width: thin;
+    }
+    .userscount{
+        @include boxStyle();
+    
+        
+    }
+    .userscount1{
+        @include boxStyle();
+    }
+  }
+
+  @media only screen and (max-width: 411px) {
+    
+  }
+
+  @media only screen and (max-width: 360px) {
+    
+  }

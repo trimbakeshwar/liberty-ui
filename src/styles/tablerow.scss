@@ -55,7 +55,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  
+ 
 }
 
 td, th {
@@ -84,4 +84,67 @@ th {
     color: white;
     padding: 5px;
     width:40px
+}
+@media only screen and (max-width: 418px) {
+  .tablecontainer{
+    margin-left: 10px;
+    margin-right: 10px;
+    width:92%
+  }
+  .ticketcontainer{
+    margin-left: 10px;
+   width: 72%;
+  }
+  .timingsss
+  {
+    display: none;
+  }
+  .ticketDetail{
+   padding-top: 20px;
+    padding-bottom: 20px;
+    } 
+    .ticketName{
+    padding-top: 20px;
+    font-weight: 600;
+    }
+  .manageContainer{
+    flex-direction: column;
+    align-items: flex-start;;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .tablecontainer{
+   
+    width:90%
+  }
+  .timingsss
+  {
+
+    display: none;
+  }
+  .ticketcontainer{
+    margin-left: 10px;
+   margin-right: 25px;
+  }
+  .manageContainer{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .tablecontainer{
+  
+    width:92.5%
+  }
+}
+@media only screen and (max-width: 360px) {
+  .tablecontainer{
+   
+    width:93.5%
+  }
+}
+@media only screen and (max-width: 360px) {
+  .tablecontainer{
+   
+    width:92.5%
+  }
 }
