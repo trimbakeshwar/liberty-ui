@@ -1,47 +1,15 @@
 import React, { Component } from 'react';
 import "../styles/tablerow.scss"
 import Table from 'react-bootstrap/Table'
-
+import datas from "../datas.json";
 class TableRow extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
+     
+     
 
-            tempBooksArry: []
-        }
-    }
-    componentDidMount() {
-        let tempBooksArry = [];
-        for (var i = 0; i < 2; i++) {
-            tempBooksArry.push({
-                ID: " #320",
-                Assignee: "	Mark C.Diaz",
-                TaskDetails: "Support of thteme",
-                PaymentMethod: "Credit card",
-                PaymentStatus: "Approved",
-                Amount: "$12,245",
-                TrackingNumber: "JPBBN435893458"
-
-
-            })
-            tempBooksArry.push({
-                ID: " #323",
-                Assignee: "	Luke Pixel",
-                TaskDetails: "New submission on website",
-                PaymentMethod: "Cash on delivery",
-                PaymentStatus: "reject",
-                Amount: "$12,245",
-                TrackingNumber: "PABT435893678"
-
-
-            })
-
-        }
-        this.setState({ tempBooksArry: tempBooksArry })
-    }
 
     render() {
+        let tabledata=this.props.TableData
         return (
             <div style={{overflow:"auto"}} className="tablecontainer">
 
@@ -56,7 +24,7 @@ class TableRow extends Component {
                         <th>Tracking Number</th>
                        
                     </tr>
-                    {this.state.tempBooksArry.map((info, index) => {
+                    {tabledata.map((info, index) => {
                         return<tr>
                             <td>{info.ID}</td>
                     <td>{info.Assignee}</td>

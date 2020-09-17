@@ -1,0 +1,138 @@
+{
+    "totalCountData": {
+        "newUsers": "65,650",
+        "newFeedback": "32,604",
+        "Employees": "17,583",
+        "TotalSales": "61,119"
+    },
+    "profileRowData": {
+        "developerName": "suraj hudge",
+        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Lorem",
+        "post": "5896",
+        "follower": "1596",
+        "likes": "7896",
+        "topProduct": "598,486",
+        "supportCase": "323,360",
+        "todayChange": "6.5%",
+        "yesterdayChange": "2.5%",
+        "TodaysGraph": [
+            1,
+            2,
+            1,
+            2.5,
+            3.5,
+            3,
+            4
+        ],
+        "yesterdayGraph": [
+            3,
+            5,
+            4,
+            6,
+            8,
+            7,
+            8.5
+        ],
+        "sales": " 6,256",
+        "OpenCampaign": "8569",
+        "salesfirstGraph": [
+            50,
+            75,
+            27,
+            30,
+            63,
+            76
+        ],
+        "salesSecondGraph": [
+            0,
+            78,
+            10,
+            50,
+            100,
+            62
+        ],
+        "OnlineSales": "5136",
+        "StoreSales": "4596"
+    },
+    "TableData": [
+        {
+            "ID": "#320",
+            "Assignee": "Mark C.Diaz",
+            "TaskDetails": "Support of thteme",
+            "PaymentMethod": "Credit card",
+            "PaymentStatus": "Approved",
+            "Amount": "$12,245",
+            "TrackingNumber": "JPBBN435893458"
+        },
+        {
+            "ID": "#321",
+            "Assignee": "Jose D",
+            "TaskDetails": "Verify your email address",
+            "PaymentMethod": "Internet banking",
+            "PaymentStatus": "Pending",
+            "Amount": "$12,245",
+            "TrackingNumber": "BDYBN435893325"
+        },
+        {
+            "ID": " #322",
+            "Assignee": "Philips T",
+            "TaskDetails": "Item support message send",
+            "PaymentMethod": "Credit card",
+            "PaymentStatus": "Approved",
+            "Amount": "$12,245",
+            "TrackingNumber": "JSNTN435884258"
+        },
+        {
+            "ID": "#323",
+            "Assignee": "Luke Pixel",
+            "TaskDetails": "New submission on website",
+            "PaymentMethod": "Cash on delivery",
+            "PaymentStatus": "Rejected",
+            "Amount": "$12,245",
+            "TrackingNumber": "JPABT435893678"
+        }
+    ],
+    "ChartRowData": {
+        "stackOne": [
+            3.5,
+            4,
+            1,
+            5,
+            3,
+            7,
+            3.5
+        ],
+        "stackTwo": [
+            4.5,
+            4,
+            7,
+            3,
+            5,
+            1,
+            4.5
+        ],
+        "projectStatus": "76,533"
+    },
+    "TicketDetails":
+    [
+        {
+    "Tname":" James :[#23047] Donec rutrum congue leo eget malesuada.",
+    "Tdetails":"Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim vivamus.",
+    "timings":"Last responded :  3 hours ago",
+    "day":"Due in : 2 Days"
+},
+    {
+        "Tname":"Stella :[#23135] Curabitur aliquet quam id dui posuere blandit.",
+        "Tdetails":"Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl.",
+        "timings":"Last responded :3 hours ago",
+        "day":"Due in : 2 Days"
+    },
+        {
+            "Tname":"John Doe : [#23246] Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.",
+            "Tdetails":"Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor sit amet.",
+            "timings":"Last responded :3 hours ago",
+            "day":"Due in :2 Days"
+        }
+]
+    
+}

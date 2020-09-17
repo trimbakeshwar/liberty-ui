@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import "../styles/headers.scss"
+import "../styles/headers.scss";
+import datas from "../datas.json";
 class TotalCount extends Component {
     render() {
         return (
@@ -12,7 +13,7 @@ class TotalCount extends Component {
                     </div>
                     <div className="countsofuser">
                         <div >New Users</div>
-                        <div className="countss"> 65,650 </div>
+        <div className="countss">{this.props.totalCount.newUsers} </div>
                     </div>
                 </div>
                
@@ -25,7 +26,7 @@ class TotalCount extends Component {
                     </div>
                     <div className="countsofuser">
                         <div >New Feedbacks</div>
-                        <div className="countss"> 65,650 </div>
+                        <div className="countss">{this.props.totalCount.newFeedback} </div>
                     </div>
                 </div>
                
@@ -37,7 +38,7 @@ class TotalCount extends Component {
                     </div>
                     <div className="countsofuser">
                         <div>Empolyees</div>
-                        <div className="countss"> 65,650 </div>
+        <div className="countss">{this.props.totalCount.Employees}</div>
                     </div>
                 </div>
                
@@ -47,7 +48,7 @@ class TotalCount extends Component {
                     </div>
                     <div className="countsofuser">
                         <div >Total Sales</div>
-                        <div className="countss"> 65,650 </div>
+                        <div className="countss"> {this.props.totalCount.TotalSales} </div>
                     </div>
                 </div>
                 

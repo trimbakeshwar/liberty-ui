@@ -3,17 +3,20 @@ import "../styles/profilerow.scss"
 import Button from 'react-bootstrap/Button'
 import ReactDOM from 'react-dom'
 import {Line} from 'react-chartjs-2'
+import datas from "../datas.json";
 class ProfileRow extends Component {
 
 
     render() {
+        const todaygraphs=this.props.profileRowData.TodaysGraph
+        const yesterdaygraph=this.props.profileRowData.yesterdayGraph
         const data = {
             labels:['jan','feb','mar','april','may','jun','jul'],
             datasets:[
                 {
                 label:'month',
 
-                data: [1,2,1,2.5,3.5,3,4],
+                data: todaygraphs,
                 borderColor:['#6970EA'],
                 borderWidth:['thin'],
         backgroundColor:['#ADB4F5'],
@@ -22,7 +25,7 @@ class ProfileRow extends Component {
 
               
             },
-                {data: [3,5,4,6,8,7,8.5],
+                {data: yesterdaygraph,
                     borderColor:['#6970EA'],
                     borderWidth:['thin'],
                 backgroundColor:['#D9E1FD'],
@@ -70,17 +73,19 @@ const option={
     
     
 }
+let salesFirstGraph=this.props.profileRowData.salesfirstGraph 
+let salesSecondGraph=this.props.profileRowData.salesSecondGraph
 const data1 = {
     labels:['2006','2007','2008','2009','2010','2011'],
     datasets:[
-        {data: [50,75,27,30,63,76],
+        {data: salesFirstGraph,
         borderColor:['#6970EA'],
         backgroundColor:['white'],
    
     pointBackgroundColor:['#A8BBFF'],
     pointBorderColor:['white']
     },
-        {data: [0,78,10,50,100,62],
+        {data:salesSecondGraph,
             borderColor:['#D9E1FD'],
             
     backgroundColor:['white'],
@@ -135,13 +140,13 @@ scales:{
                             </svg>
                         </div>
                         <div className="Name">
-                            Suraj Hudge
+                           {this.props.profileRowData.developerName}
                         </div>
                         <div className="proffesion">
                             developer
                         </div>
                         <div className="bio">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Lorem
+                        {this.props.profileRowData.bio}  
                         </div>
                         <div className="buttonclass">
                             <Button style={{ backgroundColor: "blue", color: "white", padding: "10px" }} variant="primary">Follow</Button>
@@ -149,15 +154,15 @@ scales:{
                     </div>
                     <div className="profilelikes">
                         <div>
-                            <div className="digit">5896</div>
+        <div className="digit">{this.props.profileRowData.post}</div>
                             <div className="post">post</div>
                         </div>
                         <div >
-                            <div className="digit">1596</div>
+        <div className="digit">{this.props.profileRowData.follower}</div>
                             <div className="post">Followers</div>
                         </div>
                         <div>
-                            <div className="digit">7896</div>
+                            <div className="digit">{this.props.profileRowData.likes}</div>
                             <div className="post">Likes</div>
                         </div>
                     </div>
@@ -166,12 +171,12 @@ scales:{
                 <div className="profilecard">
 
                     <div className="details">Top Product</div>
-                    <div className="quantity">598,486</div>
-                    <div className="changeInPercent">6.5% change from today</div>
+        <div className="quantity">{this.props.profileRowData.topProduct}</div>
+                    <div className="changeInPercent">{this.props.profileRowData.todayChange} change from today</div>
                     <div className="lines"></div>
                     <div className="details">Support Case</div>
-                    <div className="quantity">323,360</div>
-                    <div className="changeInPercent">2.5% change from yesterday</div>
+                    <div className="quantity">{this.props.profileRowData.supportCase}</div>
+                    <div className="changeInPercent">{this.props.profileRowData.yesterdayChange} change from yesterday</div>
                     <div >
                 <Line data={data} options={option}  height="190px" style={{width:'100%'}}/>
   
@@ -180,11 +185,11 @@ scales:{
                 <div className="profilecard">
                     <div className="dataSetting">
                         <div className="graphsetting">
-                            <div className="digit">6,256</div>
+                            <div className="digit">{this.props.profileRowData.sales}</div>
                             <div className="post" >Total sales</div>
                         </div>
                     <div className="graphsetting">
-                        <div  className="digit">8569</div>
+                        <div  className="digit">{this.props.profileRowData.OpenCampaign}</div>
                         <div className="post">Open Campaign</div>
                     </div>
                 </div>
@@ -193,11 +198,11 @@ scales:{
                     </div>
                 <div className="dataSetting">
                     <div className="graphsetting">
-                        <div className="digit">5136</div>
+                        <div className="digit">{this.props.profileRowData.OnlineSales}</div>
                         <div className="post">Online Sales</div>
                     </div>
                     <div className="graphsetting">
-                        <div className="digit">4596</div>
+                        <div className="digit">{this.props.profileRowData.StoreSales}</div>
                         <div className="post">Store Sales</div>
                     </div>
                 </div>

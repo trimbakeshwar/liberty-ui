@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import "../styles/chartrow.scss"
 import {Bar} from 'react-chartjs-2'
-
+import datas from "../datas.json";
 class ChartRow extends Component {
     render() {
         const arbitraryStackKey = "stack1"
+        let stackeone=this.props.ChartRowData.stackOne
+        let stacktwo=this.props.ChartRowData.stackTwo
         const data = {
             labels:['mon','tue','wed','thu','fri','sat','sun'],
             datasets:[
@@ -12,7 +14,7 @@ class ChartRow extends Component {
                     stack: arbitraryStackKey,
                     label: 'data1',
 
-                data: [3.5, 4, 1, 5, 3,7,3.5],
+                data: stackeone,
                 borderColor:['#6970EA'],
                 borderWidth:['thin'],
         backgroundColor:['#0A16FF','#0A16FF','#0A16FF','#0A16FF','#0A16FF','#0A16FF','#0A16FF'],
@@ -24,7 +26,7 @@ class ChartRow extends Component {
                 {
                     stack: arbitraryStackKey,
       label: 'data1',
-                    data: [4.5,4,7,3,5,1,4.5],
+                    data:stacktwo,
                     borderColor:['black'],
                     borderWidth:['thin'],
                
@@ -82,7 +84,7 @@ const option={
             
             <div className="statuss">Projects Status</div>
            
-            <div className="pcsStatus">76,533</div>
+        <div className="pcsStatus">{this.props.ChartRowData.projectStatus}</div>
     </div>
     <div className="chartcard">
         <div>

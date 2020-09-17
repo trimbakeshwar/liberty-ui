@@ -7,7 +7,28 @@ import ProfileRow from "../component/profilerow"
 import TableRow from "../component/tablerow"
 import ChartRow from "../component/chartrow"
 import ManageTicket from "../component/manageticketRow"
-class Dashbord extends Component{
+import AxiosService from "../services/axiosService"
+import axios from "axios";
+import { connect } from "react-redux";
+const service = new AxiosService();
+class Dashbord extends React.Component{
+    constructor(props) {
+        super();
+        // this.getData();
+    }
+    // getData = () => {
+
+
+       
+    //     service.Get().then((res) => {
+    //         console.log("data", res)
+    //        // this.setState({ : Response.data.data })
+    //     }).catch((err) => {
+
+    //         console.log("err", err)
+    //     })
+
+   // }
     render(){
         return(
             <div className="dashbord">
@@ -15,22 +36,29 @@ class Dashbord extends Component{
                   <Headers />
                </div>
                 <div>
-                  <TotalCount />
+                  <TotalCount totalCount={this.props.totalCountData} />
                </div>
               <div>
-                  <ProfileRow />
+                  <ProfileRow profileRowData={this.props.profileRowData} />
                </div>
                 <div>
-                  <TableRow />
+                  <TableRow TableData={this.props.TableData} />
                </div>
                <div>
-                  <ChartRow />
+                  <ChartRow ChartRowData={this.props.ChartRowData} />
                </div>
                <div>
-                   <ManageTicket />
+                   <ManageTicket TicketDetails={this.props.TicketDetails} />
                </div>
             </div>
         );
     }
 }
-export default  Dashbord
+function mapStateToProps(state) {
+    return {
+      ...state.dashbord,
+    };
+  }
+
+  export default connect(mapStateToProps)(Dashbord);
+ 
