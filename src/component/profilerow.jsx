@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "../styles/profilerow.scss"
 import Button from 'react-bootstrap/Button'
-import ReactDOM from 'react-dom'
+//import ReactDOM from 'react-dom'
 import {Line} from 'react-chartjs-2'
-import datas from "../datas.json";
+//import datas from "../datas.json";
 class ProfileRow extends Component {
 
 

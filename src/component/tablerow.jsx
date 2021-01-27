@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../styles/tablerow.scss"
-import Table from 'react-bootstrap/Table'
-import datas from "../datas.json";
+//import Table from 'react-bootstrap/Table'
+//import datas from "../datas.json";
 class TableRow extends Component {
 
      

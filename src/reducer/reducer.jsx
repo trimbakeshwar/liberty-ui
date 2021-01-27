@@ -4,9 +4,8 @@ const iState = {
     dashbord : datas
 }
 const reducer = (state=iState,action)=>{
-    switch(action.type){
-        case "GET_DASHBOARD_DATA":
-           
+    if(action.type === "GET_DASHBOARD_DATA")
+  {
         return {
             ...state,
             dashbord :action.payload,
@@ -14,5 +13,6 @@ const reducer = (state=iState,action)=>{
         }
     }
     return state
+    
 }
 export default reducer

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/headers.scss";
-import datas from "../datas.json";
+//import datas from "../datas.json";
 class TotalCount extends Component {
     render() {
         return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../styles/chartrow.scss"
 import {Bar} from 'react-chartjs-2'
-import datas from "../datas.json";
+//import datas from "../datas.json";
 class ChartRow extends Component {
     render() {
         const arbitraryStackKey = "stack1"

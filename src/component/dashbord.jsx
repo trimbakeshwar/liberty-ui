@@ -7,11 +7,8 @@ import ProfileRow from "../component/profilerow"
 import TableRow from "../component/tablerow"
 import ChartRow from "../component/chartrow"
 import ManageTicket from "../component/manageticketRow"
-import AxiosService from "../services/axiosService"
-import axios from "axios";
 import { connect } from "react-redux";
-const service = new AxiosService();
-class Dashbord extends React.Component{
+class Dashbord extends Component{
     constructor(props) {
         super();
         // this.getData();
